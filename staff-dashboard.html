@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Dashboard - Crown & Blade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-staff-only="true">
+    <!-- Shared Header -->
+    <header>
+        <div class="container navbar">
+            <a class="logo" href="staff%20portal.html" aria-label="Crown & Blade role selection">Crown & Blade</a>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="staff%20portal.html">ROLE SELECTION</a></li>
+                    <li><a href="staff-dashboard.html" class="active" aria-current="page">STAFF DASHBOARD</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="staff-container">
+        <a href="staff%20portal.html" class="back-link">&larr; Back to role selection</a>
+        <h1>Staff Management Portal</h1>
+        <p>Manage daily barber attendance and review incoming customer appointments.</p>
+
+        <!-- Section 1: Staff Attendance Tracker -->
+        <div class="section-box">
+            <h2>Barber Attendance Status</h2>
+            <p>Set each barber's attendance for today. Customers booking in this browser can see these statuses.</p>
+            <p id="attendance-message" class="form-message" role="status" aria-live="polite"></p>
+            <div class="staff-list" id="staff-attendance-container">
+                <!-- Dynamically populated via JavaScript -->
+            </div>
+        </div>
+
+        <!-- Section 2: Client Appointments Table -->
+        <div class="section-box">
+            <h2>Incoming Client Bookings</h2>
+            <div class="table-scroll" role="region" aria-label="Incoming client bookings" tabindex="0">
+                <table class="booking-table">
+                    <thead>
+                        <tr>
+                            <th>Client Name</th>
+                            <th>Email</th>
+                            <th>Service</th>
+                            <th>Assigned Barber</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody id="bookings-list">
+                        <tr>
+                            <td colspan="6" class="booking-empty">No bookings found.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <button id="clear-bookings" class="clear-btn">Clear All Bookings</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; <span data-current-year>2026</span> Crown &amp; Blade. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

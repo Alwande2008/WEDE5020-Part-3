@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Crown & Blade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Shared site header with the brand and page navigation. -->
+  <header>
+    <div class="container navbar">
+      <a class="logo" href="Customer%20Home.html" aria-label="Crown & Blade home">Crown & Blade</a>
+      <nav aria-label="Main navigation">
+        <!-- The active class highlights the page currently being viewed. -->
+        <ul>
+          <li><a href="Customer%20Home.html">HOME</a></li>
+          <li><a href="About Us.html">ABOUT US</a></li>
+          <li><a href="Service.html">SERVICES</a></li>
+          <li><a href="Gallery.html" class="active" aria-current="page">GALLERY</a></li>
+          <li><a href="Pricing.html">PRICING</a></li>
+          <li><a href="Book.Html">BOOK NOW!</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Gallery page content. -->
+  <main class="container page-content">
+    <h1>Our Amazing Gallery!!!</h1>
+    <!-- Responsive grid of haircut and grooming photographs. -->
+    <section class="gallery-grid">
+      <!-- Image and caption for the classic fade style. -->
+      <figure class="gallery-box">
+        <button class="lightbox-trigger" type="button" aria-label="View Classic Fade larger" data-lightbox-src="Images/table%20fade.jpg">
+          <img src="Images/table%20fade.jpg" srcset="Images/table%20fade-160w.jpg 160w, Images/table%20fade.jpg 201w" sizes="(max-width: 600px) 90vw, (max-width: 900px) 44vw, (max-width: 1200px) 28vw, 300px" width="201" height="251" fetchpriority="high" decoding="async" alt="Classic Fade">
+        </button>
+        <figcaption>Classic Fade</figcaption>
+      </figure>
+      <!-- Image and caption for the beard style. -->
+      <figure class="gallery-box">
+        <button class="lightbox-trigger" type="button" aria-label="View Beard Style larger" data-lightbox-src="Images/Beard.jpg">
+          <img src="Images/Beard.jpg" srcset="Images/Beard-320w.jpg 320w, Images/Beard-400w.jpg 400w, Images/Beard.jpg 500w" sizes="(max-width: 600px) 90vw, (max-width: 900px) 44vw, (max-width: 1200px) 28vw, 300px" width="500" height="575" loading="lazy" decoding="async" alt="Beard Style">
+        </button>
+        <figcaption>Beard Style</figcaption>
+      </figure>
+      <!-- Image and caption for the clean finish. -->
+      <figure class="gallery-box">
+        <button class="lightbox-trigger" type="button" aria-label="View Clean Finish larger" data-lightbox-src="Images/Straight.jpg">
+          <img src="Images/Straight.jpg" srcset="Images/Straight-320w.jpg 320w, Images/Straight-400w.jpg 400w, Images/Straight.jpg 452w" sizes="(max-width: 600px) 90vw, (max-width: 900px) 44vw, (max-width: 1200px) 28vw, 300px" width="452" height="678" loading="lazy" decoding="async" alt="Clean Finish">
+        </button>
+        <figcaption>Clean Finish</figcaption>
+      </figure>
+      <!-- Image and caption for the modern cut. -->
+      <figure class="gallery-box">
+        <button class="lightbox-trigger" type="button" aria-label="View Modern Cut larger" data-lightbox-src="Images/TaperFade.jpg">
+          <img src="Images/TaperFade.jpg" srcset="Images/TaperFade-320w.jpg 320w, Images/TaperFade-400w.jpg 400w, Images/TaperFade.jpg 554w" sizes="(max-width: 600px) 90vw, (max-width: 900px) 44vw, (max-width: 1200px) 28vw, 300px" width="554" height="554" loading="lazy" decoding="async" alt="Modern Cut">
+        </button>
+        <figcaption>Modern Cut</figcaption>
+      </figure>
+      <!-- Image and caption for the luxury shave. -->
+      <figure class="gallery-box">
+        <button class="lightbox-trigger" type="button" aria-label="View Luxury Shave larger" data-lightbox-src="Images/white.jpg">
+          <img src="Images/white.jpg" srcset="Images/white-320w.jpg 320w, Images/white-400w.jpg 400w, Images/white.jpg 452w" sizes="(max-width: 600px) 90vw, (max-width: 900px) 44vw, (max-width: 1200px) 28vw, 300px" width="452" height="678" loading="lazy" decoding="async" alt="Luxury Shave">
+        </button>
+        <figcaption>Luxury Shave</figcaption>
+      </figure>
+      <!-- Image and caption for the fresh look. -->
+      <figure class="gallery-box">
+        <button class="lightbox-trigger" type="button" aria-label="View Fresh Look larger" data-lightbox-src="Images/Line.jpg">
+          <img src="Images/Line.jpg" srcset="Images/Line-320w.jpg 320w, Images/Line-400w.jpg 400w, Images/Line.jpg 499w" sizes="(max-width: 600px) 90vw, (max-width: 900px) 44vw, (max-width: 1200px) 28vw, 300px" width="499" height="550" loading="lazy" decoding="async" alt="Fresh Look">
+        </button>
+        <figcaption>Fresh Look</figcaption>
+      </figure>
+    </section>
+    <dialog id="lightbox-dialog" class="lightbox-dialog" aria-label="Gallery image preview">
+      <button class="dialog-close" type="button" aria-label="Close image preview">&times;</button>
+      <img id="lightbox-image" alt="">
+      <p id="lightbox-caption"></p>
+    </dialog>
+  </main>
+
+  <!-- Shared footer with copyright and barbershop contact information. -->
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; <span data-current-year>2026</span> Crown &amp; Blade. All rights reserved.</p>
+      <p>123 Main Street, Suite 100 | 063 662 6142 | info@crownandblade.com</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Disallow search engine crawlers from indexing the staff pages
+Disallow: /staff-dashboard.html
+Disallow: /staff%20portal.html
+
+Sitemap: https://hairstdio.netlify.app/sitemap.xml

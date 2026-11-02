@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Choose the Crown & Blade staff portal or customer website.">
+  <title>Welcome - Crown &amp; Blade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <a class="logo" href="staff%20portal.html" aria-label="Crown &amp; Blade role selection">Crown &amp; Blade</a>
+    </div>
+  </header>
+
+  <main class="container page-content role-portal">
+    <p class="tag">WELCOME TO CROWN &amp; BLADE</p>
+    <h1>How would you like to continue?</h1>
+    <p class="role-intro">Choose the experience that best describes you.</p>
+
+    <section class="role-options" aria-label="Choose your portal">
+      <article class="card role-card">
+        <h2>I'm a Customer</h2>
+        <p>Explore our services, see pricing and gallery, book an appointment, or contact the shop.</p>
+        <a class="btn" href="Customer%20Home.html">Continue to Customer Website</a>
+      </article>
+      <article class="card role-card">
+        <h2>I'm Staff</h2>
+        <p>Enter the staff access code to open the dashboard and manage today's barber attendance.</p>
+        <form id="staff-access-form" class="staff-access-form">
+          <label for="staff-access-code">Staff access code
+            <input id="staff-access-code" name="accessCode" type="password" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" autocomplete="off" required>
+          </label>
+          <button class="btn" type="submit">Open Staff Dashboard</button>
+          <p id="staff-access-message" class="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </article>
+    </section>
+    <p class="portal-security-note">This static website uses a browser-side code only. It is not secure authentication.</p>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; <span data-current-year>2026</span> Crown &amp; Blade. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

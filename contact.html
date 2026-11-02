@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Crown &amp; Blade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <a class="logo" href="Customer%20Home.html" aria-label="Crown &amp; Blade home">Crown &amp; Blade</a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="Customer%20Home.html">HOME</a></li>
+          <li><a href="About Us.html">ABOUT US</a></li>
+          <li><a href="Service.html">SERVICES</a></li>
+          <li><a href="Gallery.html">GALLERY</a></li>
+          <li><a href="Pricing.html">PRICING</a></li>
+          <li><a href="Book.Html">BOOK NOW!</a></li>
+          <li><a href="contact.html" class="active" aria-current="page">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-content">
+    <h1>Contact Us</h1>
+    <section class="info-grid">
+      <article class="card">
+        <h2>Location</h2>
+        <p>123 Main Street, Suite 100</p>
+      </article>
+      <article class="card">
+        <h2>Phone</h2>
+        <p><a href="tel:+27636626142">063 662 6142</a></p>
+      </article>
+      <article class="card">
+        <h2>Email</h2>
+        <p><a href="mailto:info@crownandblade.com">info@crownandblade.com</a></p>
+      </article>
+    </section>
+
+    <section class="contact-section">
+      <h2>Send Us a Message</h2>
+      <p>Submitting this form opens your email app with the message ready to send.</p>
+      <form id="contact-form" class="contact-form">
+        <label for="contact-name">Your Name
+          <input type="text" id="contact-name" name="name" autocomplete="name" required>
+        </label>
+        <label for="contact-email">Your Email
+          <input type="email" id="contact-email" name="email" autocomplete="email" required>
+        </label>
+        <label for="contact-subject">Subject
+          <input type="text" id="contact-subject" name="subject" placeholder="e.g., Group booking question">
+        </label>
+        <label for="contact-message">Message
+          <textarea id="contact-message" name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit" class="btn">Prepare Email</button>
+        <p id="contact-message-status" class="form-message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="location-section">
+      <h2>Visit Our Location</h2>
+      <div class="map-container">
+        <iframe
+          title="Map showing the Crown &amp; Blade location"
+          src="https://www.google.com/maps?q=123%20Main%20Street%2C%20Suite%20100&output=embed"
+          width="100%"
+          height="450"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; <span data-current-year>2026</span> Crown &amp; Blade. All rights reserved.</p>
+      <p>123 Main Street, Suite 100 | 063 662 6142 | info@crownandblade.com</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

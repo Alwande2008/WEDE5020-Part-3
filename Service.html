@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Crown & Blade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Shared site header with the brand and page navigation. -->
+  <header>
+    <div class="container navbar">
+      <a class="logo" href="Customer%20Home.html" aria-label="Crown & Blade home">Crown & Blade</a>
+      <nav aria-label="Main navigation">
+        <!-- The active class highlights the page currently being viewed. -->
+        <ul>
+          <li><a href="Customer%20Home.html">HOME</a></li>
+          <li><a href="About Us.html">ABOUT US</a></li>
+          <li><a href="Service.html" class="active" aria-current="page">SERVICES</a></li>
+          <li><a href="Gallery.html">GALLERY</a></li>
+          <li><a href="Pricing.html">PRICING</a></li>
+          <li><a href="Book.Html">BOOK NOW!</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main content for this page. -->
+  <main class="container page-content">
+    <h1>Our Services!!!</h1>
+    <section class="services-tabs" data-tabs aria-label="Browse our services">
+      <div class="tab-list" role="tablist" aria-label="Service categories">
+        <button id="hair-tab" class="tab-button" type="button" role="tab" aria-selected="true" aria-controls="hair-panel" tabindex="0">Hair &amp; Packages</button>
+        <button id="beard-tab" class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="beard-panel" tabindex="-1">Beard &amp; Shaves</button>
+      </div>
+      <section id="hair-panel" class="tab-panel info-grid" role="tabpanel" aria-labelledby="hair-tab">
+        <article class="card">
+          <h3>Classic Haircut</h3>
+          <p>Classic trims, modern fades, and precise styling to match your look.</p>
+          <button class="service-details" type="button" data-service-title="Classic Haircut" data-service-description="Classic trims, modern fades, and precise styling tailored to your look.">More details</button>
+        </article>
+        <article class="card">
+          <h3>Full Grooming Package</h3>
+          <p>A complete grooming bundle for a sharp new look from top to bottom.</p>
+          <button class="service-details" type="button" data-service-title="Full Grooming Package" data-service-description="A complete grooming session combining a haircut and beard care for a sharp, refreshed look.">More details</button>
+        </article>
+      </section>
+      <section id="beard-panel" class="tab-panel info-grid" role="tabpanel" aria-labelledby="beard-tab" hidden>
+        <article class="card">
+          <h3>Beard Trim</h3>
+          <p>Clean shaping and detailing for a well-kept, confident beard.</p>
+          <button class="service-details" type="button" data-service-title="Beard Trim" data-service-description="Clean shaping and detailed trimming tailored to your beard and face shape.">More details</button>
+        </article>
+        <article class="card">
+          <h3>Hot Towel Shave</h3>
+          <p>A close, comfortable shave finished with a warm towel treatment.</p>
+          <button class="service-details" type="button" data-service-title="Hot Towel Shave" data-service-description="Enjoy a close, comfortable shave with a warm towel finish for a relaxed grooming experience.">More details</button>
+        </article>
+      </section>
+    </section>
+    <dialog id="service-dialog" class="site-dialog" aria-labelledby="service-dialog-title">
+      <div class="dialog-content">
+        <button class="dialog-close" type="button" aria-label="Close service details">&times;</button>
+        <h2 id="service-dialog-title"></h2>
+        <p id="service-dialog-description"></p>
+        <a class="btn" href="Book.Html">Book this service</a>
+      </div>
+    </dialog>
+  </main>
+
+  <!-- Shared footer with copyright and barbershop contact information. -->
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; <span data-current-year>2026</span> Crown &amp; Blade. All rights reserved.</p>
+      <p>123 Main Street, Suite 100 | 063 662 6142 | info@crownandblade.com</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
