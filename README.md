@@ -144,9 +144,10 @@ If this project were developed further, these would be useful upgrades:
 This project is a front-end barbershop website built as a student web design project. It shows how HTML, CSS, and JavaScript can be used together to create a responsive business website with booking and staff features. It is a strong example of a static website for a local business, but it still needs a real backend and secure systems before it can be used in a live business setting.
 
 ## References
--Responsive layouts: Chatgpt AI: Accessed : 1 November 2026
--Fixing broken javascript: Visual Studio Code Agent(Copilot), Accessed: 1 November 2026
+-Responsive design: Chatgpt AI, Accessed : 1 November 2026
+-Fixing broken javascript and Error check: Visual Studio Code Agent( Github Copilot), Accessed: 1 November 2026
 -Things that should be on a website: ideasonpurpose-(ideasonpurpose,2000),: Accessed: 28 October 2026, `https://www.ideasonpurpose.com/about/`
+-Adding JavaScript to your page: MDN, Accessed: 2 November 2026, `https://developer.mozilla.org/en-US/docs/Web/HTML/How_to/Add_JavaScript_to_your_web_page`
 ## Acknowledgements and AI assistance
 
 AI tools were used as support during the planning and development of this project:
